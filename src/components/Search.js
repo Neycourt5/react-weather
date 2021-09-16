@@ -8,6 +8,7 @@ const Search = ({ setCity }) => {
         e.preventDefault()
         console.log(search)
         setCity(search)
+        setSearch('')
     }
 
     return (
