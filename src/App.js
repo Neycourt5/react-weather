@@ -36,7 +36,10 @@ function App() {
     <div>
       <div className="container">
         <Title city={city} />
-        <Search setCity={setCity} />
+        <Search
+          setCity={setCity}
+          setIsLoading={setIsLoading}
+        />
         <Weathercards
           forecast={forecast}
           isLoading={isLoading}

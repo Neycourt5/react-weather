@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-const Search = ({ setCity }) => {
+const Search = ({ setCity, setIsLoading }) => {
     const [search, setSearch] = useState('')
 
     const onSubmit = (e) => {
@@ -9,6 +9,7 @@ const Search = ({ setCity }) => {
         console.log(search)
         setCity(search)
         setSearch('')
+        setIsLoading(true)
     }
 
     return (
